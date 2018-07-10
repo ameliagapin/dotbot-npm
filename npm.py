@@ -4,7 +4,7 @@ class NPM(dotbot.Plugin):
     _npmDirective = "npm"
 
     def can_handle(self, directive):
-        return directive in (self._brewDirective)
+        return directive in (self._npmDirective)
 
     def handle(self, directive, data):
         if directive == self._npmDirective:
